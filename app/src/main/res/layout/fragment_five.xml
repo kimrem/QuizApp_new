@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgMain"
+        android:src="@drawable/kanufahren"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/txtMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/fluss_niedersachsen_text"
+        style="@style/Fragen"
+        android:text="@string/Frage_fünf"/>
+
+    <TextView
+        android:id="@+id/erklärung"
+        style="@style/Erklaerung"
+        android:layout_below="@+id/fluss_niedersachsen_text"
+        android:text="@string/Erklärung"/>
+
+    <EditText
+        android:id="@+id/fluss_niedersachsen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:hint="@string/fluss"
+        android:inputType="textCapWords"
+        />
+
+</RelativeLayout>

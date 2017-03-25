@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <string name="Quiz">Niedersachsen-Quiz</string>
+    <string name="Quiz_start">Nach rechts wischen und los geht es</string>
+
+    <string name="Quiz_ende">Herzlichen Glückwunsch!</string>
+    <string name="Quiz_ende_zwei">Die maximale Punktzahl im Quiz ist X.</string>
+
+    <string name="Frage_eins">Ist die Nordsee ein Wattenmeer?</string>
+    <string name="Frage_zwei">Was ist die Hauptstadt von Niedersachsen?</string>
+    <string name="Frage_drei">Klicken Sie alle niedersächsischen Ostfriesischen Inseln an</string>
+    <string name="Frage_vier">Nenne eine Uni-Stadt in Niedersachsen</string>
+    <string name="Frage_fünf">Nenne einen Fluss geeignet zum Kanufahren in Niedersachsen</string>
+
+    <string name="ja">Ja</string>
+    <string name="nein">Nein</string>
+
+    <string name="Juist">Juist</string>
+    <string name="Sylt">Sylt</string>
+    <string name="Borkum">Borkum</string>
+    <string name="Ruegen">Rügen</string>
+    <string name="Norderney">Norderney</string>
+    <string name="Wangerooge">Wangerooge</string>
+
+    <string name="uni_stadt">Uni-Stadt in Niedersachsen</string>
+    <string name="fluss">Fluss zum Kanufahren in Niedersachsen</string>
+
+    <string-array name="Hauptstadt_niedersachsen">
+        <item>Oldenburg</item>
+        <item>Braunschweig</item>
+        <item>Hannover</item>
+        <item>Osnabrück</item>
+        <item>Göttingen</item>
+    </string-array>
+
+    <string name="Erklärung">Die Antwort muss richtig, aber möglichst selten sein. Je seltener die Antwort, desto mehr Punkte gibt es.</string>
+</resources>
