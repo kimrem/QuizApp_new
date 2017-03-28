@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 public class fragment_one extends Fragment {
 
+    int points = 0;
+
     public static fragment_one newInstance() {
         fragment_one fragment = new fragment_one();
         Bundle args = new Bundle();
@@ -28,6 +30,13 @@ public class fragment_one extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_one, container, false);
+
+        RadioButton radioButtonFrageEins = (RadioButton) view.findViewById(R.id.yes_radio_button);
+        //Is the button checked?
+        boolean checked_FrageEins = radioButtonFrageEins.isChecked();
+        if (checked_FrageEins) {
+            points += 10;
+        }
         return view;
     }
 

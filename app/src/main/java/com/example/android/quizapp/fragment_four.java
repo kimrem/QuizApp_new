@@ -5,12 +5,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class fragment_four extends Fragment {
-    private String title;
-    private int imageMain;
+
+    int points = 0;
 
 
     public static fragment_four newInstance() {
@@ -30,6 +31,30 @@ public class fragment_four extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_four, container, false);
+
+        EditText enter_uniStadt = (EditText)view.findViewById(R.id.uni_stadt);
+        String answer = enter_uniStadt.getText().toString();
+
+        if (answer.equals("Hannover") ||
+                answer.equals("Göttingen") ||
+                answer.equals("Osnabrück") ||
+                answer.equals("Oldenburg")) {
+            points +=10;
+        }
+
+        if (answer.equals("Hildesheim") ||
+                answer.equals("Lüneburg")) {
+            points +=20;
+        }
+
+        if (answer.equals("Vechta")) {
+            points +=30;
+        }
+
+        if (answer.equals("Clausthal-Zellerfeld")) {
+            points +=40;
+        }
+
         return view;
     }
 }
