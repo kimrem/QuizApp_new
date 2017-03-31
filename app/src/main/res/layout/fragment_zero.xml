@@ -19,27 +19,15 @@
     <ImageView
         android:id="@+id/imgMain"
         android:src="@drawable/luneburgerheide"
-        android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        style="@style/Bilder" />
 
     <TextView
         android:id="@+id/quiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         style="@style/Fragen"
-        android:text="@string/Quiz"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textAllCaps="true"/>
+        android:text="@string/Quiz" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Fragen"
-        android:text="@string/Quiz_start"
-        android:layout_below="@id/quiz"
-        android:layout_centerHorizontal="true"
-        android:textAllCaps="true"/>
+        style="@style/Quiz_Start"
+        android:text="@string/Quiz_start" />
 
 </RelativeLayout>

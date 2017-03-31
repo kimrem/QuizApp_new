@@ -12,34 +12,22 @@
     <ImageView
         android:id="@+id/imgMain"
         android:src="@drawable/nordseesonnenuntergang"
-        android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        style="@style/Bilder" />
 
     <TextView
         android:id="@+id/quiz_ende"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/Quiz_ende"
-        style="@style/Fragen"
-        android:textAllCaps="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        style="@style/Fragen" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Fragen"
+        style="@style/Erklaerung"
         android:text="@string/Quiz_ende_zwei"
         android:textAllCaps="true"
-        android:layout_below="@+id/quiz_ende"
-        android:layout_centerHorizontal="true"/>
+        android:layout_below="@+id/quiz_ende" />
 
     <Button
         android:id="@+id/button_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        style="@style/Button"
         android:text="Auswertung" />
 
 </RelativeLayout>

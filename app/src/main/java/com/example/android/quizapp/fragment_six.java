@@ -2,6 +2,7 @@ package com.example.android.quizapp;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,11 +17,12 @@ import android.widget.Toast;
 import android.view.View.OnClickListener;
 
 import static android.R.attr.checked;
+import static android.R.attr.fragment;
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
+import static com.example.android.quizapp.MainActivity.points;
 import static com.example.android.quizapp.R.drawable.hannover;
 
 public class fragment_six extends Fragment  {
-
-    int points = 0;
 
     public static fragment_six newInstance() {
         fragment_six fragment = new fragment_six();
@@ -44,11 +46,11 @@ public class fragment_six extends Fragment  {
         b.setOnClickListener(new OnClickListener() {
             public void onClick(View view) {
 
-                Toast.makeText(getActivity(), "Du hast " + points + "Punkte erreicht!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Du hast " + MainActivity.points + " Punkte erreicht!", Toast.LENGTH_LONG).show();
             }
+
         });
         return view;
     }
-
 
 }

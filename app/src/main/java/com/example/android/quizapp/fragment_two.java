@@ -6,6 +6,7 @@ package com.example.android.quizapp;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.ArrayAdapter;
+        import android.widget.RadioButton;
         import android.widget.Spinner;
         import android.widget.ImageView;
         import android.widget.TextView;
@@ -32,7 +33,15 @@ public class fragment_two extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_two, container, false);
 
+        RadioButton radioButtonFrageZwei = (RadioButton) view.findViewById(R.id.hannover_radio_button);
+        //Is the button checked?
+        boolean checked_FrageZwei = radioButtonFrageZwei.isChecked();
+        if (checked_FrageZwei) {
+            MainActivity.points += 10;
+        }
+
         return view;
+
     }
 
 }

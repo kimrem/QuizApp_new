@@ -9,9 +9,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class fragment_five extends Fragment {
+import static com.example.android.quizapp.MainActivity.points;
 
-    int points = 0;
+public class fragment_five extends Fragment {
 
     public static fragment_five newInstance() {
         fragment_five fragment = new fragment_five();
@@ -37,7 +37,7 @@ public class fragment_five extends Fragment {
         if (answerFluss.equals("Elbe") ||
                 answerFluss.equals("Ems") ||
                 answerFluss.equals("Weser"))  {
-            points +=10;
+            MainActivity.points += 10;
         }
 
         if (answerFluss.equals("Aller") ||
@@ -47,7 +47,7 @@ public class fragment_five extends Fragment {
                 answerFluss.equals("Oker") ||
                 answerFluss.equals("Vechta") ||
                 answerFluss.equals("Wümme"))  {
-            points +=30;
+            MainActivity.points += 30;
         }
 
         if (answerFluss.equals("Este") ||
@@ -63,7 +63,7 @@ public class fragment_five extends Fragment {
                 answerFluss.equals("Lune") ||
                 answerFluss.equals("Oste") ||
                 answerFluss.equals("Örtzel"))  {
-            points +=50;
+            MainActivity.points += 50;
         }
 
         return view;

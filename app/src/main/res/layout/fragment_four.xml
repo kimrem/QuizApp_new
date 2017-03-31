@@ -7,9 +7,7 @@
     <ImageView
         android:id="@+id/imgMain"
         android:src="@drawable/studenten"
-        android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        style="@style/Bilder" />
 
     <TextView
         android:id="@+id/txtMain"
@@ -29,12 +27,7 @@
 
    <EditText
        android:id="@+id/uni_stadt"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_alignParentBottom="true"
-       android:padding="16dp"
-       android:background="#FFFFFF"
-       android:hint="@string/uni_stadt"
-       android:inputType="textCapWords" />
+       style="@style/Edit_Text"
+       android:hint="@string/uni_stadt" />
 
 </RelativeLayout>

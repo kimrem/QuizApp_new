@@ -7,9 +7,7 @@
     <ImageView
         android:id="@+id/imgMain"
         android:src="@drawable/hannover"
-        android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        style="@style/Bilder" />
 
     <TextView
         android:id="@+id/txtMain"
@@ -17,19 +15,23 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         style="@style/Fragen"
         android:text="@string/Frage_zwei"/>
 
-    <Spinner
-        android:id="@+id/sort_by_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:padding="16dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:entries="@array/Hauptstadt_niedersachsen"/>
+    <RadioGroup
+        style="@style/Radio_Group">
+        <RadioButton
+            android:id="@+id/braunschweig_radio_button"
+            style="@style/Radio_Button"
+            android:text="@string/braunschweig" />
+        <RadioButton
+            android:id="@+id/osnabrück_radio_button"
+            style="@style/Radio_Button"
+            android:text="@string/osnabrück" />
+        <RadioButton
+            android:id="@+id/hannover_radio_button"
+            style="@style/Radio_Button"
+            android:text="@string/hannover" />
+    </RadioGroup>
 
 </RelativeLayout>

@@ -7,9 +7,7 @@
     <ImageView
         android:id="@+id/imgMain"
         android:src="@drawable/wattenmeer"
-        android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        style="@style/Bilder" />
 
     <TextView
         android:id="@+id/txtMain"
@@ -17,28 +15,18 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         style="@style/Fragen"
         android:text="@string/Frage_eins"/>
 
     <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:padding="16dp"
-        android:background="#FFFFFF">
+        style="@style/Radio_Group">
         <RadioButton
             android:id="@+id/yes_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Radio_Button"
             android:text="@string/ja" />
         <RadioButton
             android:id="@+id/no_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Radio_Button"
             android:text="@string/nein" />
     </RadioGroup>
 </RelativeLayout>

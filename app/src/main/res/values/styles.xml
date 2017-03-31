@@ -1,28 +1,106 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/color_bar</item>
+        <item name="android:navigationBarColor">@color/color_bar</item>
     </style>
+
 
     <style name="Fragen">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color</item>
     <item name="android:textAllCaps">true</item>
-        <item name="android:layout_margin">16dp</item>
-        <item name="android:background">#BFFFFFFF</item>
+        <item name="android:layout_margin">@dimen/layout_margin</item>
+        <item name="android:background">@color/background_white_transparent</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
     <item name="android:layout_alignParentTop">true</item>
     <item name="android:layout_centerHorizontal">true</item>
 </style>
 
     <style name="Erklaerung">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color</item>
+    <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/background_white_transparent</item>
+        <item name="android:layout_margin">@dimen/layout_margin</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+</style>
+
+    <style name="Quiz_Start">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">@dimen/layout_margin</item>
+        <item name="android:background">@color/background_white_transparent</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+    <style name="Bilder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="Radio_Group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:background">@color/background_white_transparent</item>
+    </style>
+
+    <style name="Radio_Button">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="CheckBox_General">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/background_white_transparent</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="Edit_Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/background_white_transparent</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/background_white_transparent</item>
     </style>
 
 </resources>

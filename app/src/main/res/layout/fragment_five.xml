@@ -7,9 +7,7 @@
     <ImageView
         android:id="@+id/imgMain"
         android:src="@drawable/kanufahren"
-        android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        style="@style/Bilder" />
 
     <TextView
         android:id="@+id/txtMain"
@@ -29,13 +27,7 @@
 
     <EditText
         android:id="@+id/fluss_niedersachsen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#FFFFFF"
-        android:padding="16dp"
-        android:hint="@string/fluss"
-        android:inputType="textCapWords"
-        />
+        style="@style/Edit_Text"
+        android:hint="@string/fluss" />
 
 </RelativeLayout>

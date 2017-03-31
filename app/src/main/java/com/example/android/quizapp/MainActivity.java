@@ -14,9 +14,12 @@ package com.example.android.quizapp;
         import android.widget.RadioButton;
         import android.widget.Toast;
 
+        import static android.R.attr.data;
+        import static android.R.attr.key;
+
 public class MainActivity extends AppCompatActivity {
 
-    int points = 0;
+    public static int points = 0;
 
     FragmentPagerAdapter adapterViewPager;
 
@@ -28,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         ViewPager vpPager = (ViewPager) findViewById(R.id.vpPager);
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager());
         vpPager.setAdapter(adapterViewPager);
+
     }
+
+
 }
 

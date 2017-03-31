@@ -10,9 +10,11 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import static android.os.Build.VERSION_CODES.M;
+import static com.example.android.quizapp.MainActivity.points;
+
 public class fragment_one extends Fragment {
 
-    int points = 0;
 
     public static fragment_one newInstance() {
         fragment_one fragment = new fragment_one();
@@ -20,6 +22,7 @@ public class fragment_one extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,9 +38,11 @@ public class fragment_one extends Fragment {
         //Is the button checked?
         boolean checked_FrageEins = radioButtonFrageEins.isChecked();
         if (checked_FrageEins) {
-            points += 10;
-        }
+            MainActivity.points += 10;
+            }
+
         return view;
+
     }
 
 }

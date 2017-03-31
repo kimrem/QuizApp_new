@@ -11,7 +11,6 @@ package com.example.android.quizapp;
 
 public class fragment_three extends Fragment {
 
-    int points = 0;
 
     public static fragment_three newInstance() {
         fragment_three fragment = new fragment_three();
@@ -44,7 +43,7 @@ public class fragment_three extends Fragment {
         boolean checked_borkum = borkum.isChecked();
 
         if (checked_norderney && checked_wangerooge && checked_juist && checked_borkum) {
-            points += 40;
+            MainActivity.points += 40;;
         }
 
         return view;

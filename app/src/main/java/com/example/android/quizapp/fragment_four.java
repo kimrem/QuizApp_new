@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 public class fragment_four extends Fragment {
 
-    int points = 0;
-
 
     public static fragment_four newInstance() {
         fragment_four fragment = new fragment_four();
@@ -39,20 +37,20 @@ public class fragment_four extends Fragment {
                 answer.equals("Göttingen") ||
                 answer.equals("Osnabrück") ||
                 answer.equals("Oldenburg")) {
-            points +=10;
+            MainActivity.points += 10;
         }
 
         if (answer.equals("Hildesheim") ||
                 answer.equals("Lüneburg")) {
-            points +=20;
+            MainActivity.points += 20;
         }
 
         if (answer.equals("Vechta")) {
-            points +=30;
+            MainActivity.points += 30;
         }
 
         if (answer.equals("Clausthal-Zellerfeld")) {
-            points +=40;
+            MainActivity.points += 40;
         }
 
         return view;

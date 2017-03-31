@@ -5,7 +5,7 @@
     <string name="Quiz_start">Nach rechts wischen und los geht es</string>
 
     <string name="Quiz_ende">Herzlichen Glückwunsch!</string>
-    <string name="Quiz_ende_zwei">Die maximale Punktzahl im Quiz ist X.</string>
+    <string name="Quiz_ende_zwei">Die maximale Punktzahl im Quiz sind 150 Punkte.</string>
 
     <string name="Frage_eins">Ist die Nordsee ein Wattenmeer?</string>
     <string name="Frage_zwei">Was ist die Hauptstadt von Niedersachsen?</string>
@@ -25,6 +25,10 @@
 
     <string name="uni_stadt">Uni-Stadt in Niedersachsen</string>
     <string name="fluss">Fluss zum Kanufahren in Niedersachsen</string>
+
+    <string name="hannover">Hannover</string>
+    <string name="braunschweig">Braunschweig</string>
+    <string name="osnabrück">Osnabrück</string>
 
     <string-array name="Hauptstadt_niedersachsen">
         <item>Oldenburg</item>
