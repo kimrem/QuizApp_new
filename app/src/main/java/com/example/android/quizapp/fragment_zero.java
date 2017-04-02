@@ -23,6 +23,8 @@ public class fragment_zero extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
+    // Creates view for the first tab
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

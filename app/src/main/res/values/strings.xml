@@ -4,6 +4,8 @@
     <string name="Quiz">Niedersachsen-Quiz</string>
     <string name="Quiz_start">Nach rechts wischen und los geht es</string>
 
+    <string name="Antwort_abschicken">Antwort abschicken</string>
+
     <string name="Quiz_ende">Herzlichen Glückwunsch!</string>
     <string name="Quiz_ende_zwei">Die maximale Punktzahl im Quiz sind 150 Punkte.</string>
 

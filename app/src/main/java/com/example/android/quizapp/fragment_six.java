@@ -22,7 +22,7 @@ import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 import static com.example.android.quizapp.MainActivity.points;
 import static com.example.android.quizapp.R.drawable.hannover;
 
-public class fragment_six extends Fragment  {
+public class fragment_six extends Fragment {
 
     public static fragment_six newInstance() {
         fragment_six fragment = new fragment_six();
@@ -36,6 +36,10 @@ public class fragment_six extends Fragment  {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
+    /** Creates view for the seventh tab
+     * Displays toast message with final score once the button is pressed
+     */
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

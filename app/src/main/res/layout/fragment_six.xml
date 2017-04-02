@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/txtMain"
@@ -11,19 +11,19 @@
 
     <ImageView
         android:id="@+id/imgMain"
-        android:src="@drawable/nordseesonnenuntergang"
-        style="@style/Bilder" />
+        style="@style/Bilder"
+        android:src="@drawable/nordseesonnenuntergang" />
 
     <TextView
         android:id="@+id/quiz_ende"
-        android:text="@string/Quiz_ende"
-        style="@style/Fragen" />
+        style="@style/Fragen"
+        android:text="@string/Quiz_ende" />
 
     <TextView
         style="@style/Erklaerung"
+        android:layout_below="@+id/quiz_ende"
         android:text="@string/Quiz_ende_zwei"
-        android:textAllCaps="true"
-        android:layout_below="@+id/quiz_ende" />
+        android:textAllCaps="true" />
 
     <Button
         android:id="@+id/button_id"

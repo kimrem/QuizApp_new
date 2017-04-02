@@ -44,17 +44,13 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     // Returns the page title for the top indicator
     @Override
     public CharSequence getPageTitle(int position) {
-        if (position==6)
-        {
+        if (position == 6) {
             return "Endstand";
-        }
-        else if (position==0)
-        {
+        } else if (position == 0) {
             return "Starte Quiz";
-        }
-        else
+        } else
 
             return "Frage " + position;
-                }
+    }
 
 }

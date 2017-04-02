@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imgMain"
-        android:src="@drawable/hannover"
-        style="@style/Bilder" />
+        style="@style/Bilder"
+        android:src="@drawable/hannover" />
 
     <TextView
         android:id="@+id/txtMain"
@@ -16,18 +16,26 @@
 
     <TextView
         style="@style/Fragen"
-        android:text="@string/Frage_zwei"/>
+        android:text="@string/Frage_zwei" />
 
-    <RadioGroup
-        style="@style/Radio_Group">
+    <Button
+        android:id="@+id/button_id_zwei"
+        style="@style/Button"
+        android:text="@string/Antwort_abschicken" />
+
+    <RadioGroup style="@style/Radio_Group"
+        android:layout_above="@id/button_id_zwei">
+
         <RadioButton
             android:id="@+id/braunschweig_radio_button"
             style="@style/Radio_Button"
             android:text="@string/braunschweig" />
+
         <RadioButton
             android:id="@+id/osnabrück_radio_button"
             style="@style/Radio_Button"
             android:text="@string/osnabrück" />
+
         <RadioButton
             android:id="@+id/hannover_radio_button"
             style="@style/Radio_Button"
